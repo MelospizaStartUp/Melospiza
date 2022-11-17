@@ -1,0 +1,169 @@
+@font-face{
+    font-family: typographica;
+    src: url('../../fonts/TypoGraphica\ 400.otf ');  
+}
+
+
+:root {
+    --logo-color:#ec9fac;
+    --background: #342932;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: typographica;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#navbar_main {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: black;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.navbar-brand {
+    color: var(--logo-color);
+    font-size: 30px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: typographica;
+    letter-spacing: 2px;
+}
+
+.nav-bar-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.navbar__melospiza{
+    display: contents;
+    font-size: 25px;
+}
+
+@media screen and (max-width:770px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+    .nav-bar-logo {
+        width: 40px;
+        margin-right: 8px;
+    }
+}
+
+.navbar,
+li,
+a {
+    color: white;
+}
+
+.navbar,
+li,
+a:hover {
+    color: white;
+}
+
+.navbar-brand:hover {
+    background: none;
+}
+
+#navbarNav {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.navbar-toggler {
+    background: var(--logo-color);
+    height: 30px;
+    width: 45px;
+    padding-left: 4px;
+    border-left-width: 0px;
+    padding-right: 0px;
+    color: white;
+}
+
+.navbar-nav,
+li {
+    margin-left: 15px;
+}
+
+.underline:after {
+    content: "";
+    display: block;
+    background-color: var(--logo-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.underline {
+    font-family: typographica;
+    letter-spacing: 2px;
+}
+
+.underline:hover:after {
+    width: 100%;
+}
+
+.melospiza_logo{
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.company__name{
+    text-align: center;
+    margin: 40px;
+    font-size: 36px;
+    color: var(--logo-color);
+}
+
+.main__title{
+    font-size: 35px;
+    /* color: #dc324e; */
+    background:-webkit-linear-gradient(292deg, #772d80,#ef96a2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1.6px;
+    margin: 55px 30px 30px 30px;
+}
+
+.main__title__content{
+    font-size: 20px;
+    color: white;
+    margin: 30px;
+    letter-spacing: 1.3px;
+}
+
+@media screen and (min-width:1024px){
+    .main__title,.main__title__content{
+        margin: 40px 160px 70px 160px;
+    }
+}
+
+.main__title__content span{
+    color: var(--logo-color);
+}
+
+.content_end{
+    margin: 30px;
+    font-size: 30px;
+    color: var(--logo-color);background:-webkit-linear-gradient(292deg, #772d80,#ef96a2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 50px 30px 50px 30px;
+    letter-spacing: 2px;
+}
+

@@ -1,0 +1,489 @@
+@font-face{
+    font-family: typographica;
+    src: url('fonts/TypoGraphica\ 400.otf');  
+}
+
+
+:root {
+    --logo-color:#ec9fac;
+    --background: #342932;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: typographica;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Fixed Arrow*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+}
+
+.arrow {
+    font-size: 50px;
+    color: white;
+}
+
+
+/* Navigation bar */
+
+#navbar_main {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: black;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.navbar-brand {
+    color: var(--logo-color);
+    font-size: 30px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: typographica;
+    letter-spacing: 2px;
+}
+
+.nav-bar-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.navbar__melospiza{
+    display: contents;
+    font-size: 25px;
+}
+
+@media screen and (max-width:770px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+    .nav-bar-logo {
+        width: 40px;
+        margin-right: 8px;
+    }
+}
+
+.navbar,
+li,
+a {
+    color: white;
+}
+
+.navbar,
+li,
+a:hover {
+    color: white;
+}
+
+.navbar-brand:hover {
+    background: none;
+}
+
+#navbarNav {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.navbar-toggler {
+    background: var(--logo-color);
+    height: 30px;
+    width: 45px;
+    padding-left: 4px;
+    border-left-width: 0px;
+    padding-right: 0px;
+    color: white;
+}
+
+.navbar-nav,
+li {
+    margin-left: 15px;
+}
+
+.underline:after {
+    content: "";
+    display: block;
+    background-color: var(--logo-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.underline {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: typographica;
+    letter-spacing: 2px;
+}
+
+.underline:hover:after {
+    width: 100%;
+}
+
+
+/* Home Image */
+
+.home-img {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)), url(images/medeiros.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width:770px) {
+    .home-img {
+        clip-path: circle(180vh at 50% -80vh);
+    }
+    .home-title{
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.home-img {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-img {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: typographica;
+    letter-spacing: 2px;
+}
+
+.home-img,
+.h2 {
+    color: white;
+}
+
+@media screen and (max-width:770px) {
+    .home-title {
+        font-size: 27px;
+    }
+}
+
+@media screen and (width:800px) {
+    .home-title {
+        font-size: 40px;
+    }
+}
+
+
+/* About us */
+
+.about {
+    color: var(--logo-color);
+    text-align: center;
+    font-size: 23px;
+    font-family: typographica;
+    letter-spacing: 2px;
+}
+
+.about_us_title {
+    font-family: typographica;
+    letter-spacing: 2px;
+}
+
+.about_us_title i{
+    color:#ec9fac;
+}
+.about_container {
+    padding: 50px;
+    margin-top: 40px;
+    background: var(--background); 
+    border-radius: 15px;
+    margin-top: 30%;
+}
+
+.rounded.float-top.img {
+    width: 180px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_img {
+    /* border-right: inset var(--border); */
+    border-right: inset var(--logo-color);
+    margin-right: 30px;
+}
+
+@media screen and (max-width:770px) {
+    .logo_img {
+        margin: 20px;
+        border-right: none;
+        padding-bottom: 50px;
+        /* border-bottom: inset var(--border); */
+        border-bottom: inset var(--logo-color);
+    }
+}
+
+@media screen and (min-width:860px) {
+    .logo_img {
+        margin: 20px;
+        border-right: none;
+        padding-bottom: 50px;
+        /* border-right: inset var(--border) */
+        border-right: inset var(--logo-color);
+    }
+}
+
+
+.about_us p {
+    color: white;
+    text-align: center;
+    font-family: typographica;
+    letter-spacing: 2px;
+    font-size: 23px;
+    margin: 30px 10px 30px 10px;
+}
+
+
+
+
+
+/* Our Projects */
+
+.our-project p {
+    font-size: 23px;
+    font-family: typographica;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-align: center;
+    /* color: white; */
+    color: #ec9fac;
+}
+
+.our-project {
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.project-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.our-project-img {
+    width: 200px;
+    background: white;
+    border-radius: 20px;
+}
+
+/* services */
+
+.service_background{
+    background-color: var(--background);
+}
+.our-services{
+    flex-direction: column;
+    margin: 100px 0px 0px 0px;
+}
+
+.services-div{
+    margin: 40px 0px 40px 0px;
+}
+
+.servicesImg{
+    width: 300px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 #ec9fac, 0 6px 20px 0 rgb(50 36 51 / 51%);
+}
+
+.services{
+    font-size: 23px;
+    text-align: center;
+    color: white;
+}
+
+.our-services-title{
+    text-align: center;
+    font-size: 23px;
+    color: var(--logo-color);
+    padding-top: 50px;
+}
+
+.services-button{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px 30px 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(292deg, #dd3ff1,#a84c59);
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+.services-button:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid black;
+    border-radius: 30px 10px;
+    transition: .5s ease-in;
+}
+
+@media screen and (max-width:767px){
+    .servicesImg{
+        width: 200px;
+    }
+}
+
+.development-content{
+    margin: 20px;
+    color: var(--logo-color);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* Contact Us */
+
+.contact_us {
+    font-size: 23px;
+    font-family: typographica;
+    letter-spacing: 2px;
+    /* color: white; */
+    color: #ec9fac;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.email {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-family: typographica;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.phone {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-family: typographica;
+    letter-spacing: 2px;
+    margin-top: 40px;
+}
+
+.phone__number{
+    margin-top: 30px;
+}
+.contact_icon{
+    padding-right: 10px;
+    color: #ec9fac;
+}
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background: var(--background);
+    font-family: typographica;
+    letter-spacing: 2px;
+    margin-top: 100px;
+}
+
+.footer-img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.footer-name {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 45px;
+}
+
+
+.footer-name span{
+    color: #ec9fac;
+}
+
+.footer__company__name{
+    color: #ec9fac;
+}
+
+.connect {
+    text-align: center;
+}
+
+
+@media screen and (max-width:770px) {
+    .footer-name {
+        font-size: 30px;
+    }
+    .footer-img {
+        width: 60px;
+    }
+}
+
+.icons {
+    font-size: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px 40px 20px 40px;
+}
+
+.instagram,
+.linkedin {
+    padding-right: 30px;
+    padding-left: 30px;
+    /* color: #c26ec6; */
+    color: var(--logo-color);
+}
+
+.linkedin:hover {
+    color: white;
+    transition: .3s ease-in;
+}
+
+.instagram:hover {
+    color: white;
+    transition: .3s ease-in;
+}
